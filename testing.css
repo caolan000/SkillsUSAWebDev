@@ -1,0 +1,123 @@
+.item1 { grid-area: header;}
+.item2 { grid-area: nav; }
+.item3 { grid-area: menu; }
+.item4 { grid-area: main; }
+.item5 { grid-area: right; }
+.item6 { grid-area: footer; }
+    
+.grid-container {
+  display: grid;
+    grid-template-areas:
+    'header header header header header header header'
+    'nav nav nav nav nav nav nav'
+    'menu main main main main right right'
+    'footer footer footer footer footer footer footer';
+    gap: 10px;
+    background-color: pink;
+    padding: 10px;
+}
+.grid-container > div {
+    background-color: #ffaaaa;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+
+/* header */
+.item1 {
+    height: 10em;
+    background-image: url(banner.png);
+    width: 100%;
+}
+
+
+/* navbar */
+.navbar {
+    overflow: hidden;
+    background-color: #cc7676;
+}
+  
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: ;
+}
+  
+a:hover {
+    background-color: #ffd8d8;
+    color: rgb(49, 0, 0);
+}
+  
+.navbar a.active {
+    background-color: #dd7f7f;
+    color: white;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+/* menu */
+.item3 {
+    height: 20em;
+    margin: 0;
+    padding: 0;
+}
+
+.item3 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.item3 ul li {
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+}
+.item3 ul li a {
+    display: block;
+    padding: 1em;
+    background-color: #ffaaaa;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    width: 100%;
+}
+
+.item3 ul li a:hover {
+    background-color: #ffd8d8;
+    color: rgb(49, 0, 0);
+}
+
+
+/* main text/content */
+.item4 {
+    height: 20em;
+}
+
+/* right image */
+.item5 {
+    height: 20em;
+    background-image: url(strawberry.png);
+    width: 100%;
+}
+
+/* footer */
+.item6 {
+    height: 20em;
+}
+
+
+
+
