@@ -3,9 +3,9 @@
 body{
     display: grid;
     grid-template-areas:
-    'header-photo header-photo header-photo header-photo header-content header-content'
+    'header header header header header header'
     'nav nav nav nav nav nav'
-    'content1 content1 content2 content2 content3 content3'
+    'three three three three three three'
     'bottom bottom bottom bottom bottom bottom'
     'footer footer footer footer footer footer';
     margin: 0;
@@ -15,6 +15,12 @@ nav{
     grid-area: nav;
     height: 75px;
     background-color: blue;
+}
+
+.header{
+    grid-area: header;
+    display: flex;
+    justify-content: 
 }
 
 .header-photo{
@@ -27,8 +33,31 @@ nav{
 
 .header-content{
     grid-area: header-content;
+    display: flex;
     background-color: red;
     height: 450px;
+
+}
+
+.header-content p{
+    display: flex;
+    justify-content: center;
+    width: 33%;
+    font-size:medium;
+ }
+
+ .header-content h1{
+    display: flex;
+    justify-content: center;
+    width: 33%;
+    font-size:me
+ }
+
+.threesections{
+    grid-area: three;
+    display: grid;
+    grid-template-areas: 
+    'content1 content2 content3';
 }
 
 .content1{
