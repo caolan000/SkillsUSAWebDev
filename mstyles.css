@@ -1,57 +1,57 @@
-
+:root{
+    --brown: #a65e44;
+    --lightbrown: #e4c1b4;
+    --darkbrown: #502d21;
+    --darkgreen: #014011;
+    --green: #02731e;
+    --lightblue: #77bdd9;
+    --blue: #024059;
+}
 
 body{
     display: grid;
     grid-template-areas:
-    'header header header header header header'
+    'header-photo header-photo header-photo header-photo header-content header-content'
     'nav nav nav nav nav nav'
     'three three three three three three'
     'bottom bottom bottom bottom bottom bottom'
     'footer footer footer footer footer footer';
     margin: 0;
+    color: var(--darkbrown);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--lightbrown);
 }
 
 nav{
     grid-area: nav;
     height: 75px;
-    background-color: blue;
+    background-color: var(--brown)
 }
 
 .header{
-    grid-area: header;
-    display: flex;
-    justify-content: 
+    display:flex;
+    flex-wrap: nowrap;
 }
 
 .header-photo{
+    display:flex;
     grid-area: header-photo;
     height: 450px;
+    width: 75%;
     background-image: url(images/treeees.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .header-content{
+    display:flex;
+    flex-direction: column;
     grid-area: header-content;
-    display: flex;
-    background-color: red;
+    background-color: var(--lightbrown);
     height: 450px;
+    width: 100%;
 
 }
-
-.header-content p{
-    display: flex;
-    justify-content: center;
-    width: 33%;
-    font-size:medium;
- }
-
- .header-content h1{
-    display: flex;
-    justify-content: center;
-    width: 33%;
-    font-size:me
- }
 
 .threesections{
     grid-area: three;
@@ -62,23 +62,26 @@ nav{
 
 .content1{
     grid-area: content1;
-    background-color: purple;
+    background-color: var(--darkbrown);
     height: 400px;
     margin: 30px 60px 30px 60px;
+    border-radius: 5px;
 }
 
 .content2{
     grid-area: content2;
-    background-color: pink;
+    background-color: var(--darkbrown);
     height: 400px;
     margin: 30px 60px 30px 0px;
+    border-radius: 5px;
 }
 
 .content3{
     grid-area: content3;
-    background-color: orange;
+    background-color: var(--darkbrown);
     height: 400px;
     margin: 30px 60px 30px 0px;
+    border-radius: 5px;
 }
 
 .bottom-content{
@@ -89,6 +92,6 @@ nav{
 
 footer{
     grid-area: footer;
-    background-color: magenta;
+    background-color: var(--brown);
     height: 200px;
 }
