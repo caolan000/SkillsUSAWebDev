@@ -1,7 +1,7 @@
 :root{
     --brown: #a65e44;
     --lightbrown: #e4c1b4;
-    --darkbrown: #502d21;
+    --darkbrown: rgb(80, 45, 33);
     --darkgreen: #014011;
     --green: #02731e;
     --lightblue: #77bdd9;
@@ -25,7 +25,30 @@ body{
 nav{
     grid-area: nav;
     height: 75px;
-    background-color: var(--brown)
+    background-color: var(--brown);
+    border-top: solid 5px var(--darkbrown);
+    border-bottom: solid 5px var(--darkbrown);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--darkbrown);
+    background-color: var(--lightbrown);
+    padding: 10px;
+    border-radius:5px;
+    border: solid 4px var(--darkbrown);
+    font-weight: bold;
+}
+
+nav a:hover{
+    box-shadow: 0px -2px 23px -9px var(--darkbrown);
+}
+
+nav a:active{
+    box-shadow: inset 0px -2px 18px -9px var(--darkbrown);
 }
 
 .header{
@@ -37,8 +60,8 @@ nav{
     display:flex;
     grid-area: header-photo;
     height: 450px;
-    width: 75%;
-    background-image: url(images/treeees.jpg);
+    width: 150%;
+    background-image: url(images/natureyippee.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -49,8 +72,22 @@ nav{
     grid-area: header-content;
     background-color: var(--lightbrown);
     height: 450px;
-    width: 100%;
+    border-left: solid 5px var(--darkbrown);
+    width: max-content;
 
+}
+
+.header-content p{
+    margin: 50px 8% 5px 8%;
+    line-height: 30px;
+}
+
+.header-content h1{
+    margin: 50px 8% 0px 8%;
+}
+
+.header-content img {
+    height: 150px;
 }
 
 .threesections{
@@ -62,36 +99,101 @@ nav{
 
 .content1{
     grid-area: content1;
-    background-color: var(--darkbrown);
+    background-color: var(--brown);
     height: 400px;
     margin: 30px 60px 30px 60px;
     border-radius: 5px;
+    border: solid 5px var(--darkbrown);
+    box-shadow: 0px -2px 23px -9px var(--darkbrown);
+    color: var(--lightbrown);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content1 h2{
+    margin-top: 5%;
+}
+
+.content1 .image{
+    height: 300px;
+    width: 80%;
+    background-image: url(images/explorechild.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    border: solid 4px var(--darkbrown);
+    margin-bottom: 35px;
 }
 
 .content2{
     grid-area: content2;
-    background-color: var(--darkbrown);
+    background-color: var(--brown);
     height: 400px;
     margin: 30px 60px 30px 0px;
     border-radius: 5px;
+    border: solid 5px var(--darkbrown);
+    box-shadow: 0px -2px 23px -9px var(--darkbrown);
+    color: var(--lightbrown);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content2 h2{
+    margin-top: 5%;
+}
+
+.content2 .image{
+    height: 300px;
+    width: 80%;
+    background-image: url(images/manlookin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    border: solid 4px var(--darkbrown);
+    margin-bottom: 35px;
 }
 
 .content3{
     grid-area: content3;
-    background-color: var(--darkbrown);
+    background-color: var(--brown);
     height: 400px;
     margin: 30px 60px 30px 0px;
     border-radius: 5px;
+    border: solid 5px var(--darkbrown);
+    box-shadow: 0px -2px 23px -9px var(--darkbrown);
+    color:var(--lightbrown);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content3 h2{
+    margin-top: 5%;
+}
+
+.content3 .image{
+    height: 300px;
+    width: 80%;
+    background-image: url(images/kidshuggintree.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    border: solid 4px var(--darkbrown);
+    margin-bottom: 35px;
 }
 
 .bottom-content{
     grid-area: bottom;
     height: 450px;
     width: 100%;
+    box-shadow: 0px -7px 23px -6px var(--darkbrown);
 }
 
 footer{
     grid-area: footer;
     background-color: var(--brown);
     height: 200px;
+    border-top: solid 5px var(--darkbrown);
 }
