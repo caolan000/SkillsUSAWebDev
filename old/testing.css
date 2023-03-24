@@ -26,7 +26,7 @@
 
 /* header */
 .item1 {
-    height: 10em;
+    height: 20em;
     background-image: url(banner.png);
     width: 100%;
 }
@@ -38,6 +38,7 @@
     background-color: #ffaaaa;
     display: flex;
     justify-content: flex-end;
+    padding: 5px;
 }
   
 .navbar a {
@@ -45,9 +46,12 @@
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 70px;
+    padding: 14px 30px;
+    margin-left: 15px;
     text-decoration: none;
-    font-size: ;
+    font-size: 1rem;
+    border-radius: 1em;
+
 }
   
 a:hover {
@@ -86,9 +90,10 @@ a:hover {
 .item3 ul li a {
     display: block;
     padding: 1em;
-    /* background-color: #ffaaaa; */
+    background-color: #ffaaaa;
     text-align: center;
     text-decoration: none;
+    font-size: 1rem;
     color: #ffffff;
     width: 100%;
 }
