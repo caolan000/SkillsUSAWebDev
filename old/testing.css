@@ -34,8 +34,10 @@
 
 /* navbar */
 .navbar {
-    overflow: hidden;
-    background-color: #cc7676;
+    /* overflow: hidden; */
+    background-color: #ffaaaa;
+    display: flex;
+    justify-content: flex-end;
 }
   
 .navbar a {
@@ -43,7 +45,7 @@
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 70px;
     text-decoration: none;
     font-size: ;
 }
@@ -52,14 +54,9 @@ a:hover {
     background-color: #ffd8d8;
     color: rgb(49, 0, 0);
 }
-  
-.navbar a.active {
-    background-color: #dd7f7f;
-    color: white;
-}
 
-.navbar {
-    position: fixed;
+.item2 {
+    position: sticky;
     top: 0;
     width: 100%;
 }
@@ -67,9 +64,10 @@ a:hover {
 
 /* menu */
 .item3 {
-    height: 20em;
-    margin: 0;
-    padding: 0;
+    height: 100%;
+    position: sticky;
+    top: 0;
+    width: 100%;
 }
 
 .item3 ul {
@@ -88,7 +86,7 @@ a:hover {
 .item3 ul li a {
     display: block;
     padding: 1em;
-    background-color: #ffaaaa;
+    /* background-color: #ffaaaa; */
     text-align: center;
     text-decoration: none;
     color: #ffffff;
@@ -115,7 +113,7 @@ a:hover {
 
 /* footer */
 .item6 {
-    height: 20em;
+    height: 5em;
 }
 
 
